@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_chapter_1/app/modules/product/controllers/cart_controller.dart';
+import 'package:getx_chapter_1/app/modules/product/views/cart_view.dart';
 import '../models/product_model.dart';
 
 class ProductDetailsView extends StatelessWidget {
@@ -18,6 +19,9 @@ class ProductDetailsView extends StatelessWidget {
             icon: Icon(Icons.shopping_cart),
             onPressed: () {
               Get.toNamed('/cart');
+              //  Get.offNamed('/cart', arguments: product);
+              //  Get.offAll(CartView(), arguments: product);
+              //  Get.offAllNamed('/cart', arguments: product);
             },
           ),
         ],
@@ -26,6 +30,12 @@ class ProductDetailsView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Get.back();
+            //   },
+            //   child: Text('Go Back'),
+            // ),
             Text(product.name, style: TextStyle(fontSize: 24)),
             SizedBox(height: 10),
             Text('\$${product.price}', style: TextStyle(fontSize: 24)),

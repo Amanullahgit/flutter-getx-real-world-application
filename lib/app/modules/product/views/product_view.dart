@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_chapter_1/app/modules/product/controllers/product_controller.dart';
+import 'package:getx_chapter_1/app/modules/product/views/product_details_view.dart';
 
 class ProductView extends StatelessWidget {
   final ProductController productController = Get.put(ProductController());
@@ -22,6 +23,10 @@ class ProductView extends StatelessWidget {
               subtitle: Text('\$${product.price.toString()}'),
               onTap: () {
                 Get.toNamed('/product-details', arguments: product);
+                //Get.to(ProductDetailsView(), arguments: product);
+                //  Get.off(ProductDetailsView(), arguments: product);
+                //  Get.offNamed('/product-details', arguments: product);
+                // Get.offAll(ProductDetailsView());
               },
             );
           },
