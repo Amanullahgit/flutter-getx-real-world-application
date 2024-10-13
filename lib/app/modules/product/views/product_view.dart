@@ -4,7 +4,7 @@ import 'package:getx_chapter_1/app/modules/product/controllers/product_controlle
 import 'package:getx_chapter_1/app/modules/product/views/product_details_view.dart';
 
 class ProductView extends StatelessWidget {
-  final ProductController productController = Get.put(ProductController());
+  final ProductController productController = Get.find<ProductController>();
 
   @override
   Widget build(BuildContext context) {

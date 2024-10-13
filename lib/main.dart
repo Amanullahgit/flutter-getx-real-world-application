@@ -4,7 +4,6 @@ import 'package:getx_chapter_1/app/modules/product/controllers/cart_controller.d
 import 'app/routes/app_pages.dart';
 
 void main() {
-  Get.put(CartController());
   runApp(MyApp());
 }
 
