@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_chapter_1/app/modules/product/controllers/cart_controller.dart';
-import 'package:getx_chapter_1/app/modules/product/controllers/product_controller.dart';
-import 'package:getx_chapter_1/app/modules/product/views/cart_view.dart';
 import '../models/product_model.dart';
 
 class ProductDetailsView extends StatelessWidget {
@@ -46,10 +44,45 @@ class ProductDetailsView extends StatelessWidget {
                 cartController.addToCart(product);
 
                 Get.snackbar(
-                    'Added to Cart', '${product.name} added to your cart');
+                  'Added to Cart', // Title
+                  '${product.name} has been added to your cart', // Message
+                  snackPosition: SnackPosition.BOTTOM, // Snackbar position
+                  duration: Duration(
+                      seconds: 2), // How long the snackbar will be displayed
+                  backgroundColor: Colors.green,
+                  colorText: Colors.white,
+                );
               },
               child: Text('Add to Cart'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.bottomSheet(
+                  Container(
+                    color: Colors.white,
+                    child: Wrap(
+                      children: <Widget>[
+                        ListTile(
+                          leading: Icon(Icons.shopping_cart),
+                          title: Text('View Cart'),
+                          onTap: () {
+                            Get.toNamed('/cart');
+                          },
+                        ),
+                        ListTile(
+                          leading: Icon(Icons.payment),
+                          title: Text('Proceed to Checkout'),
+                          onTap: () {
+                            Get.toNamed('/checkout');
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+              child: Text('More Actions'),
+            )
           ],
         ),
       ),
