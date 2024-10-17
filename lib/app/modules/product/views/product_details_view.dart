@@ -12,7 +12,7 @@ class ProductDetailsView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product Details'),
+        title: Text('Product Detail'),
         actions: [
           IconButton(
             icon: Icon(Icons.shopping_cart),
@@ -35,7 +35,7 @@ class ProductDetailsView extends StatelessWidget {
             //   },
             //   child: Text('Go Back'),
             // ),
-            Text(product.name, style: TextStyle(fontSize: 24)),
+            Text(product.title, style: TextStyle(fontSize: 24)),
             SizedBox(height: 10),
             Text('\$${product.price}', style: TextStyle(fontSize: 24)),
             SizedBox(height: 20),
@@ -45,7 +45,7 @@ class ProductDetailsView extends StatelessWidget {
 
                 Get.snackbar(
                   'Added to Cart', // Title
-                  '${product.name} has been added to your cart', // Message
+                  '${product.title} has been added to your cart', // Message
                   snackPosition: SnackPosition.BOTTOM, // Snackbar position
                   duration: Duration(
                       seconds: 2), // How long the snackbar will be displayed
