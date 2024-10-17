@@ -6,7 +6,7 @@ This repository contains the code for **Chapter 1** of the Flutter GetX Mastercl
 
 Follow the step-by-step tutorial in the video for a hands-on experience!
 
-[![Watch on YouTube](https://img.youtube.com/vi/X7EjiQEmrBI/0.jpg)](https://www.youtube.com/watch?v=X7EjiQEmrBI?t=36s)
+[![Watch on YouTube](https://img.youtube.com/vi/X7EjiQEmrBI/0.jpg)](https://www.youtube.com/watch?v=X7EjiQEmrBI&t=36s)
 
 🔗 **[Watch the full tutorial on YouTube](https://www.youtube.com/watch?v=X7EjiQEmrBI)**
 
