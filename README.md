@@ -22,35 +22,6 @@ In this chapter, you'll learn:
 
 ---
 
-## 📂 Folder Structure
-
-Here’s the updated folder structure after adding dependency management and services:
-
-```
-lib/
-│
-├── app/
-│   ├── modules/
-│   │   ├── product/
-│   │   │   ├── controllers/
-│   │   │   │   └── product_controller.dart
-│   │   │   │   └── cart_controller.dart
-│   │   │   ├── views/
-│   │   │   │   └── product_view.dart
-│   │   │   │   └── product_details_view.dart
-│   │   │   │   └── cart_view.dart
-│   │   │   └── models/
-│   │   │       └── product_model.dart
-│   ├── services/
-│   │   └── cart_service.dart
-│   └── routes/
-│       └── app_pages.dart
-│       └── app_routes.dart
-└── main.dart
-```
-
----
-
 ## 🧑‍💻 How to Run the App
 
 1. Clone the repository:
