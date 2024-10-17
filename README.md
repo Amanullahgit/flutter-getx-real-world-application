@@ -1,16 +1,92 @@
-# getx_chapter_1
+# Flutter GetX Masterclass: Chapter 2 - State Management with GetX
 
-A new Flutter project.
+This repository contains the code for **Chapter 2** of the Flutter GetX Masterclass. In this chapter, we dive into **state management** using GetX and build upon the previous product listing app by adding cart functionality. You'll learn how to manage and update state across multiple views seamlessly.
 
-## Getting Started
+## 📹 Watch the Tutorial on YouTube
 
-This project is a starting point for a Flutter application.
+Follow the step-by-step guide in the video to get hands-on experience with GetX state management!
 
-A few resources to get you started if this is your first Flutter project:
+[![Watch on YouTube](https://img.youtube.com/vi/X7EjiQEmrBI/0.jpg)](https://www.youtube.com/watch?v=X7EjiQEmrBI&t=596s)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🔗 **[Watch the full tutorial on YouTube](https://www.youtube.com/watch?v=X7EjiQEmrBI)**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📝 Chapter Overview
+
+In this chapter, you'll learn:
+1. How to use **GetX Controllers** to manage state.
+2. How to update state dynamically using **Obx** and **Rx** variables.
+3. How to implement cart functionality with **add to cart** and **remove from cart** features.
+4. How to keep state consistent across multiple views in your app.
+
+---
+
+## 📂 Folder Structure
+
+We’re building upon the folder structure from Chapter 1 and adding cart functionality:
+
+```
+lib/
+│
+├── app/
+│   ├── modules/
+│   │   ├── product/
+│   │   │   ├── controllers/
+│   │   │   │   └── product_controller.dart
+│   │   │   │   └── cart_controller.dart
+│   │   │   ├── views/
+│   │   │   │   └── product_view.dart
+│   │   │   │   └── product_details_view.dart
+│   │   │   │   └── cart_view.dart
+│   │   │   └── models/
+│   │   │       └── product_model.dart
+│   └── routes/
+│       └── app_pages.dart
+│       └── app_routes.dart
+└── main.dart
+```
+
+---
+
+## 🧑‍💻 How to Run the App
+
+1. Clone the repository:
+    ```bash
+    git clone -b Chapter-2 https://github.com/Amanullahgit/flutter-getx-real-world-application.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd flutter-getx-real-world-application
+    ```
+3. Install dependencies:
+    ```bash
+    flutter pub get
+    ```
+4. Run the app:
+    ```bash
+    flutter run
+    ```
+
+---
+
+## 🛠️ Key GetX Concepts in This Chapter
+
+- **Reactive State Management**: Using Rx variables like `RxList` and `RxDouble` to keep the state reactive.
+- **Obx Widget**: How to dynamically rebuild widgets when the state changes.
+- **GetX Controller**: Managing complex business logic in the controller layer for a clean and scalable architecture.
+
+---
+
+## 🔗 Useful Links
+
+- **GetX Package**: [pub.dev/packages/get](https://pub.dev/packages/get)
+- **Flutter Documentation**: [flutter.dev/docs](https://flutter.dev/docs)
+
+---
+
+Contributions are welcome! Fork this repo and make it even better. 🙌
+
+---
+
+Happy Coding! 🎉
