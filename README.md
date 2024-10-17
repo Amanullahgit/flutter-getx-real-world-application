@@ -22,33 +22,6 @@ In this chapter, you'll learn:
 
 ---
 
-## 📂 Folder Structure
-
-Here’s the updated folder structure after adding Dialogs, Snackbars, and BottomSheets in this chapter:
-
-```
-lib/
-│
-├── app/
-│   ├── modules/
-│   │   ├── product/
-│   │   │   ├── controllers/
-│   │   │   │   └── product_controller.dart
-│   │   │   ├── views/
-│   │   │   │   └── product_view.dart
-│   │   │   │   └── product_details_view.dart
-│   │   │   │   └── cart_view.dart
-│   │   │   │   └── dialog_snackbar_bottomsheet_demo.dart
-│   ├── services/
-│   │   └── cart_service.dart
-│   └── routes/
-│       └── app_pages.dart
-│       └── app_routes.dart
-└── main.dart
-```
-
----
-
 ## 🛠️ Key GetX Concepts in This Chapter
 
 - **Dialogs**: Learn how to use `Get.dialog()` to create custom dialogs that handle user input or confirmation actions.
