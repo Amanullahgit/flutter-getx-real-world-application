@@ -22,34 +22,6 @@ In this chapter, you'll learn:
 
 ---
 
-## 📂 Folder Structure
-
-Here’s the updated folder structure after implementing API integration:
-
-```
-lib/
-│
-├── app/
-│   ├── modules/
-│   │   ├── product/
-│   │   │   ├── controllers/
-│   │   │   │   └── product_controller.dart
-│   │   │   ├── views/
-│   │   │   │   └── product_view.dart
-│   │   │   │   └── product_details_view.dart
-│   │   │   │   └── cart_view.dart
-│   │   │   │   └── api_view.dart
-│   ├── services/
-│   │   ├── cart_service.dart
-│   │   └── api_service.dart
-│   └── routes/
-│       └── app_pages.dart
-│       └── app_routes.dart
-└── main.dart
-```
-
----
-
 ## 🔗 Key GetX Concepts in This Chapter
 
 - **HTTP Requests**: Learn how to use the `http` package to make GET requests to a REST API and fetch data.
