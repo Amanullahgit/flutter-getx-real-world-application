@@ -12,7 +12,7 @@ class ProductDetailsView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product Detail'),
+        title: Text('product_details'.tr),
         actions: [
           IconButton(
             icon: Icon(Icons.shopping_cart),

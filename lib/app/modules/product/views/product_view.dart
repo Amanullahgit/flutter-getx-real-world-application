@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_chapter_1/app/modules/product/controllers/product_controller.dart';
 import 'package:getx_chapter_1/app/modules/product/views/product_details_view.dart';
+import 'package:getx_chapter_1/app/services/theme_service.dart';
 
 class ProductView extends StatelessWidget {
   final ProductController productController = Get.find<ProductController>();
@@ -10,7 +11,25 @@ class ProductView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product List'),
+        title: Text('product_list'.tr),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.language),
+            onPressed: () {
+              if (Get.locale == Locale('en', 'US')) {
+                Get.updateLocale(Locale('es', 'ES'));
+              } else {
+                Get.updateLocale(Locale('en', 'US'));
+              }
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.brightness_6),
+            onPressed: () {
+              ThemeService().switchTheme();
+            },
+          ),
+        ],
       ),
       body: Obx(() {
         if (productController.isLoading.value) {
